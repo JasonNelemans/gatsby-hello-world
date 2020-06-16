@@ -7,4 +7,8 @@
 module.exports = {
   /* Your site config here */
   plugins: ['gatsby-plugin-typography'],
+  siteMetadata: {
+    title: "Jason's website",
+    author: 'Jason'
+  }
 }
