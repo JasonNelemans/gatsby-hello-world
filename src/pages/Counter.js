@@ -8,7 +8,7 @@ export default class Counter extends Component {
 
   render() {
     return (
-      <div>
+      <div style={{ color: this.props.color }}>
         <h1>Counter</h1>
         <p>current count: {this.state.count}</p>
         <button onClick={() => {
