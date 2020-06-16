@@ -6,7 +6,16 @@
 
 module.exports = {
   /* Your site config here */
-  plugins: ['gatsby-plugin-typography'],
+  plugins: [
+    'gatsby-plugin-typography',
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `src`,
+        path: `${__dirname}/src/`,
+      },
+    },
+  ],
   siteMetadata: {
     title: "Jason's website",
     author: 'Jason'
