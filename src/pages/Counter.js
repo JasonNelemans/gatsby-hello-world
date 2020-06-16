@@ -1,4 +1,5 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
+import Layout from "../components/Layout";
 
 export default class Counter extends Component {
   constructor() {
@@ -9,6 +10,7 @@ export default class Counter extends Component {
   render() {
     return (
       <div style={{ color: this.props.color }}>
+        <Layout>
         <h1>Counter</h1>
         <p>current count: {this.state.count}</p>
         <button onClick={() => {
@@ -21,6 +23,7 @@ export default class Counter extends Component {
             count: this.state.count - 1
           })
         }}>Minus</button>
+        </Layout>
       </div>
     )
   }

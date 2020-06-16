@@ -1,9 +1,12 @@
-import React from "react";
-import Link from "gatsby-link";
+import React from "react"
+import Link from "gatsby-link"
+import Layout from "../../components/Layout"
 
 export default function Page3() {
-  return <div style={{color: 'pink'}}>
-   <h2>Page 3</h2>
-   <Link to="/">Go home</Link>
-  </div>
+  return (
+    <Layout>
+      <h2>Page 3</h2>
+      <Link to="/">Go home</Link>
+    </Layout>
+  )
 }
